@@ -2136,8 +2136,8 @@ const page = () => {
                   />
                   <textarea
                     placeholder="Message"
-                    rows="6"
-                    class="w-full rounded-md px-4 text-sm pt-3 outline-[#a91079]"
+                    rows={6}
+                    className="w-full rounded-md px-4 text-sm pt-3 outline-[#a91079]"
                   ></textarea>
                   <button
                     type="button"
