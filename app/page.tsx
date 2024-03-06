@@ -5,6 +5,7 @@ import About from "./compoment/About";
 import Rooms from "./compoment/Rooms";
 import Equipment from "./compoment/Equipment";
 import Services from "./compoment/Services";
+import Partners from "./compoment/Partners";
 import Gallery from "./compoment/Gallery";
 import Testimonial from "./compoment/Testimonial";
 import Contact from "./compoment/Contact";
@@ -21,6 +22,7 @@ const page = () => {
       <Rooms />
       <Equipment />
       <Services />
+      <Partners />
       <Gallery />
       <Testimonial />
       <Contact />

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <section className="w-full my-6 mx-auto max-w-screen-xl">
+    <section id='Services' className="w-full my-6 mx-auto max-w-screen-xl">
           <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16 text-center">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-violet-700 dark:text-white">
               Our Services
