@@ -1,12 +1,39 @@
-import React from "react";
+import React from 'react';
+import dynamic from 'next/dynamic';
+import { promises as fs } from 'fs';
 
-const Rooms = () => {
+const Rooms = async() => {
+  
+
+  const siteInfo = await fs.readFile(process.cwd() + '/public/api/SiteInfo.json', 'utf8');
+  const data = JSON.parse(siteInfo);
+  const rooms = data.chamber;
+  // console.log(rooms.id);
+
+//   const tradEn = await fs.readFile(process.cwd() + '/public/api/TradEn.json', 'utf8');
+//   const trdata = JSON.parse(tradEn);
+//   const trrooms = trdata.translations.en.Chamber;
+//   const phrase = Object.keys(trrooms)[0];
+//   const numbers = parseInt(phrase.match(/\d+/)![0]);
+// console.log(numbers);
+  // console.log(phrase);
+  // const phrase: string = "260555-description";
+// const numbers: number = parseInt(phrase.match(/\d+/)![0]);
+
+// console.log(numbers); // Output: 260555
+  
+  
+
+
+
   return (
+
+
     <section id="Rooms" className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-violet-700 dark:text-white">
-            Our Best Rooms
+          Our Best Rooms
           </h2>
           <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
@@ -16,100 +43,46 @@ const Rooms = () => {
           </p>
         </div>
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          
+        {rooms.map((room, index) => (
+
+          <div key={index} className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              
             <div>
               <img
                 className="pb-4 rounded-t-lg"
-                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
+                src={`https://pics.uncubus.tech/images/11242/upload/500X257/${room.img[0]}`}
                 alt="product image"
               />
             </div>
+
             <div className="px-5 pb-5">
               <div>
                 <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                   Chambre Privilège Avec Terrasse Privée
+                  {/* {trrooms} */}
+                   {/* {room.id} */}
                 </h5>
-              </div>
-              <div className="flex items-center mt-2.5 mb-5">
-                <div className="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-gray-200 dark:text-gray-600"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                </div>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">
-                  4.0
-                </span>
+                <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
+                          These rooms have a private terrace. The bathroom has
+                          an italian shower and seperate toilet.
+                        </p>
               </div>
               <div className="flex items-center justify-between">
-                <span className="font-bold text-gray-900 dark:text-white">
-                  $599/Night
-                </span>
-
+              <span className="font-semibold text-gray-900 dark:text-white">
+                            
+                          </span>
                 {/* <!-- Modal toggle --> */}
-                <p className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                  Read More
+                <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  
                   <button
                     data-modal-target="extralarge-modal"
                     data-modal-toggle="extralarge-modal"
                     type="button"
                   >
-                    <svg
-                      className="w-4 h-4 ms-2 text-gray-400 hover:text-gray-500"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
+                    Read More
                   </button>
-                </p>
+                </div>
 
                 {/* <!-- Main modal --> */}
                 <div
@@ -159,60 +132,21 @@ const Rooms = () => {
                           {/* <!-- Carousel wrapper --> */}
                           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                             {/* <!-- Item 1 --> */}
+                            { room.img.map((pic, index)=>(
+            
                             <div
+                            key={index}
                               className="hidden duration-700 ease-in-out"
                               data-carousel-item
                             >
                               <img
-                                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
+                                src={`https://pics.uncubus.tech/images/11242/upload/500X257/${pic}`}
                                 className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                                 alt="..."
                               />
                             </div>
-                            {/* <!-- Item 2 --> */}
-                            <div
-                              className="hidden duration-700 ease-in-out"
-                              data-carousel-item
-                            >
-                              <img
-                                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="..."
-                              />
-                            </div>
-                            {/* <!-- Item 3 --> */}
-                            <div
-                              className="hidden duration-700 ease-in-out"
-                              data-carousel-item
-                            >
-                              <img
-                                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="..."
-                              />
-                            </div>
-                            {/* <!-- Item 4 --> */}
-                            <div
-                              className="hidden duration-700 ease-in-out"
-                              data-carousel-item
-                            >
-                              <img
-                                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="..."
-                              />
-                            </div>
-                            {/* <!-- Item 5 --> */}
-                            <div
-                              className="hidden duration-700 ease-in-out"
-                              data-carousel-item
-                            >
-                              <img
-                                src="https://pics.uncubus.tech/images/11242/upload/500X257/170b30ac1f60313ebd728195cf8669e6.jpg"
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="..."
-                              />
-                            </div>
+            ))}
+                            
                           </div>
                           {/* <!-- Slider indicators --> */}
                           <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
@@ -308,14 +242,14 @@ const Rooms = () => {
                         </h3>
                         <div className="flex items-center justify-between">
                           <span className="font-semibold text-gray-900 dark:text-white">
-                            Room size : 35m²
+                            Room size : {room.surface}m²
                           </span>
                           <span className="font-semibold text-gray-900 dark:text-white">
-                            Max persons : 3
+                            Max persons : {room.chamberMaxPers}
                           </span>
                         </div>
                         <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          Non-smoking room
+                        {room.isFumeur ? 'Smoking room' : 'Non-smoking room'}
                           <span>
                             <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
                               1 Queen size or 2 Single bed(s)
@@ -369,10 +303,13 @@ const Rooms = () => {
               </div>
             </div>
           </div>
+          
+        ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default Rooms;
+
+export default dynamic(() => Promise.resolve(Rooms), { ssr: false });

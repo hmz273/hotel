@@ -1,6 +1,6 @@
 import NavBar from "./compoment/NavBar";
 import Hero from "./compoment/Hero";
-import Booking from "./compoment/Booking";
+// import Booking from "./compoment/Booking";
 import About from "./compoment/About";
 import Rooms from "./compoment/Rooms";
 import Equipment from "./compoment/Equipment";
@@ -17,7 +17,7 @@ const page = () => {
     <div className="p-2 md:p-0">
       <NavBar />
       <Hero />
-      <Booking />
+      {/* <Booking /> */}
       <About />
       <Rooms />
       <Equipment />

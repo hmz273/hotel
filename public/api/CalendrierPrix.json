@@ -1,0 +1,1837 @@
+{
+    "status": 1,
+    "response": {
+        "bestprice": {
+            "name_room_ota": "mini-suite with garden or terrace",
+            "hotel_id": "11242",
+            "ota": "booking",
+            "type_map": 1,
+            "roomtype_ota": {
+                "room_name": "mini-suite with garden or terrace-24839905",
+                "items": [
+                    {
+                        "item_name": "fabulous breakfast included",
+                        "values": []
+                    },
+                    {
+                        "item_name": "non-refundable",
+                        "values": []
+                    },
+                    {
+                        "item_name": "",
+                        "values": []
+                    },
+                    {
+                        "item_name": "10% genius discount applied to the price before taxes and charges",
+                        "values": []
+                    },
+                    {
+                        "item_name": "only $x1 $x2",
+                        "values": {
+                            "val1": "1",
+                            "val2": "room left on our site"
+                        }
+                    }
+                ],
+                "sleeps": "Max persons: 2"
+            },
+            "roomtype_wik": [
+                "mini-suite with garden or terrace-24839905",
+                "bed&breakfast|non-refundable"
+            ],
+            "code_room": 260559,
+            "metrage": "45 m²",
+            "code_meal_paln": 2,
+            "code_sale_condition": 9,
+            "code_occupancy": 2,
+            "code_children": 0,
+            "searchedby": "2",
+            "price_html": "€ 1,276",
+            "price_desplayed": 1276,
+            "price": 1243.24,
+            "ttc": 1263.24,
+            "ht": 1141.8181818181818,
+            "ht_without_promo": 1141.8181818181818,
+            "ttc_without_promo": 1276,
+            "currency": "EUR",
+            "promottcht": "ttc",
+            "offer_freebreakfast": false,
+            "offer": {
+                "2024-03-24": {
+                    "price_day_final": 319,
+                    "price_day": 319,
+                    "genius_price_day_final": 315.81,
+                    "genius": [
+                        {
+                            "id": 1452,
+                            "offer_type": "genius",
+                            "pourcentage": 1,
+                            "pourcentage_type": "percent",
+                            "day_name": "Sunday",
+                            "price_day_promo": 315.81
+                        }
+                    ]
+                },
+                "2024-03-25": {
+                    "price_day_final": 319,
+                    "price_day": 319,
+                    "genius_price_day_final": 315.81,
+                    "genius": [
+                        {
+                            "id": 1452,
+                            "offer_type": "genius",
+                            "pourcentage": 1,
+                            "pourcentage_type": "percent",
+                            "day_name": "Monday",
+                            "price_day_promo": 315.81
+                        }
+                    ]
+                },
+                "2024-03-26": {
+                    "price_day_final": 319,
+                    "price_day": 319,
+                    "genius_price_day_final": 315.81,
+                    "genius": [
+                        {
+                            "id": 1452,
+                            "offer_type": "genius",
+                            "pourcentage": 1,
+                            "pourcentage_type": "percent",
+                            "day_name": "Tuesday",
+                            "price_day_promo": 315.81
+                        }
+                    ]
+                },
+                "2024-03-27": {
+                    "price_day_final": 319,
+                    "price_day": 319,
+                    "genius_price_day_final": 315.81,
+                    "genius": [
+                        {
+                            "id": 1452,
+                            "offer_type": "genius",
+                            "pourcentage": 1,
+                            "pourcentage_type": "percent",
+                            "day_name": "Wednesday",
+                            "price_day_promo": 315.81
+                        }
+                    ]
+                }
+            },
+            "stock": 1,
+            "exchange_rate": 1,
+            "tax_exc_engine": {
+                "taxedesejour": 20
+            },
+            "tax_inc_engine": {
+                "tva": 113.02181818181818
+            },
+            "tax_in": true,
+            "tax_exc_engine_without_promo": {
+                "taxedesejour": 20
+            },
+            "tax_inc_engine_without_promo": {
+                "tva": 114.18181818181819
+            },
+            "tax_wh": [
+                {
+                    "txName": "tva",
+                    "txMontant": 10,
+                    "txFormule": 1,
+                    "txTypeMontant": 0,
+                    "txInc": true
+                },
+                {
+                    "txName": "taxedesejour",
+                    "txMontant": 2.5,
+                    "txFormule": 3,
+                    "txTypeMontant": 1,
+                    "txInc": false
+                }
+            ],
+            "code_ltid": null,
+            "uid": "booking65e5d6d96f3168.11901753",
+            "isbookingbasic": false,
+            "serial": "24839905_91142195_0_41_0",
+            "conditions_details": {
+                "condition": {
+                    "annulation": {
+                        "type": "HF",
+                        "typeAnnulation": 9,
+                        "intervals": [
+                            {
+                                "d": 0,
+                                "a": "INF",
+                                "p": 100,
+                                "an-fn": 0
+                            }
+                        ]
+                    },
+                    "no-show": {
+                        "checked": true,
+                        "percent": 100,
+                        "stay-firstnight": 0
+                    },
+                    "prepayment": {
+                        "checked": false,
+                        "percent": 0,
+                        "stay-firstnight": 0,
+                        "date": null
+                    },
+                    "reschedule": {
+                        "checked": false,
+                        "date": null
+                    }
+                },
+                "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+            },
+            "rooms_literie": null,
+            "addedvalues": [
+                {
+                    "category": "mealplan",
+                    "name": "fabulous breakfast included",
+                    "values": [],
+                    "sorting": 0
+                }
+            ],
+            "garantie": true,
+            "code_ltdid": null,
+            "room_upgrade": 0,
+            "room_upgrade_to": null,
+            "is_partner": false,
+            "otaEnvEtab": 0,
+            "env": 0,
+            "plusadult": 2,
+            "rateType": "BOOKABLE",
+            "paymentType": "AT_HOTEL",
+            "snapshoot": true,
+            "isGoogleHotelAds": false,
+            "hbnet": null,
+            "hbttc": null,
+            "prixOLD2": 1263.24,
+            "detailPrice": {
+                "Ttc": 1263.24,
+                "priceDesplayed": 1276,
+                "Sale": 1243.24,
+                "HT": 1130.2181818181818,
+                "TaxeExc": 20,
+                "TaxeInc": 113.02181818181818,
+                "details": {
+                    "inc": {
+                        "tva": {
+                            "name": "tva",
+                            "montant": 113.02181818181818
+                        }
+                    },
+                    "exc": {
+                        "taxedesejour": {
+                            "name": "taxedesejour",
+                            "montant": 20
+                        }
+                    }
+                }
+            },
+            "detailPrice_without_promo": {
+                "Ttc": 1276,
+                "priceDesplayed": 1276,
+                "Sale": 1256,
+                "HT": 1141.8181818181818,
+                "TaxeExc": 20,
+                "TaxeInc": 114.18181818181819,
+                "details": {
+                    "inc": {
+                        "tva": {
+                            "name": "tva",
+                            "montant": 114.18181818181819
+                        }
+                    },
+                    "exc": {
+                        "taxedesejour": {
+                            "name": "taxedesejour",
+                            "montant": 20
+                        }
+                    }
+                }
+            },
+            "ocupation": "2_0",
+            "ttc_without_promoOLD": 1276,
+            "tax": {
+                "inc": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true,
+                        "txMontantDisplay": 10,
+                        "txIssejour": false
+                    }
+                ],
+                "exc": [
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false,
+                        "txMontantDisplay": 2.5,
+                        "txIssejour": false
+                    }
+                ]
+            },
+            "conditiondetail": {
+                "prepaye": {
+                    "checked": false,
+                    "type": false,
+                    "nbr": 0
+                },
+                "show": {
+                    "checked": true,
+                    "type": false,
+                    "nbr": 100
+                },
+                "annulation": {
+                    "type": 9,
+                    "isHeur": null,
+                    "detail": []
+                }
+            },
+            "ltId": 36628,
+            "child": "0"
+        },
+        "engine": {
+            "260559_36166_2_0_1": {
+                "name_room_ota": "mini-suite with garden or terrace",
+                "hotel_id": "11242",
+                "ota": "booking",
+                "type_map": 1,
+                "roomtype_ota": {
+                    "room_name": "mini-suite with garden or terrace-24839905",
+                    "items": [
+                        {
+                            "item_name": "fabulous breakfast included",
+                            "values": []
+                        },
+                        {
+                            "item_name": "non-refundable",
+                            "values": []
+                        },
+                        {
+                            "item_name": "",
+                            "values": []
+                        },
+                        {
+                            "item_name": "10% genius discount applied to the price before taxes and charges",
+                            "values": []
+                        },
+                        {
+                            "item_name": "only $x1 $x2",
+                            "values": {
+                                "val1": "1",
+                                "val2": "room left on our site"
+                            }
+                        }
+                    ],
+                    "sleeps": "Max persons: 2"
+                },
+                "roomtype_wik": [
+                    "mini-suite with garden or terrace-24839905",
+                    "bed&breakfast|non-refundable"
+                ],
+                "code_room": 260559,
+                "metrage": "45 m²",
+                "code_meal_paln": 2,
+                "code_sale_condition": 9,
+                "code_occupancy": 2,
+                "code_children": 0,
+                "searchedby": "2",
+                "price_html": "€ 1,276",
+                "price_desplayed": 1276,
+                "price": 1243.24,
+                "ttc": 1263.24,
+                "ht": 1141.8181818181818,
+                "ht_without_promo": 1141.8181818181818,
+                "ttc_without_promo": 1276,
+                "currency": "EUR",
+                "promottcht": "ttc",
+                "offer_freebreakfast": false,
+                "offer": {
+                    "2024-03-24": {
+                        "price_day_final": 319,
+                        "price_day": 319,
+                        "genius_price_day_final": 315.81,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Sunday",
+                                "price_day_promo": 315.81
+                            }
+                        ]
+                    },
+                    "2024-03-25": {
+                        "price_day_final": 319,
+                        "price_day": 319,
+                        "genius_price_day_final": 315.81,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Monday",
+                                "price_day_promo": 315.81
+                            }
+                        ]
+                    },
+                    "2024-03-26": {
+                        "price_day_final": 319,
+                        "price_day": 319,
+                        "genius_price_day_final": 315.81,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Tuesday",
+                                "price_day_promo": 315.81
+                            }
+                        ]
+                    },
+                    "2024-03-27": {
+                        "price_day_final": 319,
+                        "price_day": 319,
+                        "genius_price_day_final": 315.81,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Wednesday",
+                                "price_day_promo": 315.81
+                            }
+                        ]
+                    }
+                },
+                "stock": 1,
+                "exchange_rate": 1,
+                "tax_exc_engine": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine": {
+                    "tva": 113.02181818181818
+                },
+                "tax_in": true,
+                "tax_exc_engine_without_promo": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine_without_promo": {
+                    "tva": 114.18181818181819
+                },
+                "tax_wh": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true
+                    },
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false
+                    }
+                ],
+                "code_ltid": null,
+                "uid": "booking65e5d6d96f3168.11901753",
+                "isbookingbasic": false,
+                "serial": "24839905_91142195_0_41_0",
+                "conditions_details": {
+                    "condition": {
+                        "annulation": {
+                            "type": "HF",
+                            "typeAnnulation": 9,
+                            "intervals": [
+                                {
+                                    "d": 0,
+                                    "a": "INF",
+                                    "p": 100,
+                                    "an-fn": 0
+                                }
+                            ]
+                        },
+                        "no-show": {
+                            "checked": true,
+                            "percent": 100,
+                            "stay-firstnight": 0
+                        },
+                        "prepayment": {
+                            "checked": false,
+                            "percent": 0,
+                            "stay-firstnight": 0,
+                            "date": null
+                        },
+                        "reschedule": {
+                            "checked": false,
+                            "date": null
+                        }
+                    },
+                    "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+                },
+                "rooms_literie": null,
+                "addedvalues": [
+                    {
+                        "category": "mealplan",
+                        "name": "fabulous breakfast included",
+                        "values": [],
+                        "sorting": 0
+                    }
+                ],
+                "garantie": true,
+                "code_ltdid": null,
+                "room_upgrade": 0,
+                "room_upgrade_to": null,
+                "is_partner": false,
+                "otaEnvEtab": 0,
+                "env": 0,
+                "plusadult": 2,
+                "rateType": "BOOKABLE",
+                "paymentType": "AT_HOTEL",
+                "snapshoot": true,
+                "isGoogleHotelAds": false,
+                "hbnet": null,
+                "hbttc": null,
+                "prixOLD2": 1263.24,
+                "detailPrice": {
+                    "Ttc": 1263.24,
+                    "priceDesplayed": 1276,
+                    "Sale": 1243.24,
+                    "HT": 1130.2181818181818,
+                    "TaxeExc": 20,
+                    "TaxeInc": 113.02181818181818,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 113.02181818181818
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "detailPrice_without_promo": {
+                    "Ttc": 1276,
+                    "priceDesplayed": 1276,
+                    "Sale": 1256,
+                    "HT": 1141.8181818181818,
+                    "TaxeExc": 20,
+                    "TaxeInc": 114.18181818181819,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 114.18181818181819
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "ocupation": "2_0",
+                "ttc_without_promoOLD": 1276,
+                "tax": {
+                    "inc": [
+                        {
+                            "txName": "tva",
+                            "txMontant": 10,
+                            "txFormule": 1,
+                            "txTypeMontant": 0,
+                            "txInc": true,
+                            "txMontantDisplay": 10,
+                            "txIssejour": false
+                        }
+                    ],
+                    "exc": [
+                        {
+                            "txName": "taxedesejour",
+                            "txMontant": 2.5,
+                            "txFormule": 3,
+                            "txTypeMontant": 1,
+                            "txInc": false,
+                            "txMontantDisplay": 2.5,
+                            "txIssejour": false
+                        }
+                    ]
+                },
+                "conditiondetail": {
+                    "prepaye": {
+                        "checked": false,
+                        "type": false,
+                        "nbr": 0
+                    },
+                    "show": {
+                        "checked": true,
+                        "type": false,
+                        "nbr": 100
+                    },
+                    "annulation": {
+                        "type": 9,
+                        "isHeur": null,
+                        "detail": []
+                    }
+                },
+                "ltId": 36628,
+                "child": "0",
+                "indexSearch": "260559_36166_2_0_1_bc"
+            },
+            "260557_36166_2_0_1": {
+                "name_room_ota": "junior suite with private pool and garden",
+                "hotel_id": "11242",
+                "ota": "booking",
+                "type_map": 1,
+                "roomtype_ota": {
+                    "room_name": "junior suite with private pool and garden-24839903",
+                    "items": [
+                        {
+                            "item_name": "fabulous breakfast included",
+                            "values": []
+                        },
+                        {
+                            "item_name": "non-refundable",
+                            "values": []
+                        },
+                        {
+                            "item_name": "",
+                            "values": []
+                        },
+                        {
+                            "item_name": "10% genius discount applied to the price before taxes and charges",
+                            "values": []
+                        },
+                        {
+                            "item_name": "only $x1 $x2",
+                            "values": {
+                                "val1": "1",
+                                "val2": "left on our site"
+                            }
+                        }
+                    ],
+                    "sleeps": "Max persons: 2"
+                },
+                "roomtype_wik": [
+                    "junior suite with private pool and garden-24839903",
+                    "bed&breakfast|non-refundable"
+                ],
+                "code_room": 260557,
+                "metrage": "50 m²",
+                "code_meal_paln": 2,
+                "code_sale_condition": 9,
+                "code_occupancy": 2,
+                "code_children": 0,
+                "searchedby": "2",
+                "price_html": "€ 1,816",
+                "price_desplayed": 1816,
+                "price": 1777.84,
+                "ttc": 1797.84,
+                "ht": 1632.7272727272727,
+                "ht_without_promo": 1632.7272727272727,
+                "ttc_without_promo": 1816,
+                "currency": "EUR",
+                "promottcht": "ttc",
+                "offer_freebreakfast": false,
+                "offer": {
+                    "2024-03-24": {
+                        "price_day_final": 454,
+                        "price_day": 454,
+                        "genius_price_day_final": 449.46,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Sunday",
+                                "price_day_promo": 449.46
+                            }
+                        ]
+                    },
+                    "2024-03-25": {
+                        "price_day_final": 454,
+                        "price_day": 454,
+                        "genius_price_day_final": 449.46,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Monday",
+                                "price_day_promo": 449.46
+                            }
+                        ]
+                    },
+                    "2024-03-26": {
+                        "price_day_final": 454,
+                        "price_day": 454,
+                        "genius_price_day_final": 449.46,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Tuesday",
+                                "price_day_promo": 449.46
+                            }
+                        ]
+                    },
+                    "2024-03-27": {
+                        "price_day_final": 454,
+                        "price_day": 454,
+                        "genius_price_day_final": 449.46,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Wednesday",
+                                "price_day_promo": 449.46
+                            }
+                        ]
+                    }
+                },
+                "stock": 1,
+                "exchange_rate": 1,
+                "tax_exc_engine": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine": {
+                    "tva": 161.62181818181818
+                },
+                "tax_in": true,
+                "tax_exc_engine_without_promo": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine_without_promo": {
+                    "tva": 163.27272727272728
+                },
+                "tax_wh": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true
+                    },
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false
+                    }
+                ],
+                "code_ltid": null,
+                "uid": "booking65e5d6d96f3168.11901753",
+                "isbookingbasic": false,
+                "serial": "24839903_91142195_0_41_0",
+                "conditions_details": {
+                    "condition": {
+                        "annulation": {
+                            "type": "HF",
+                            "typeAnnulation": 9,
+                            "intervals": [
+                                {
+                                    "d": 0,
+                                    "a": "INF",
+                                    "p": 100,
+                                    "an-fn": 0
+                                }
+                            ]
+                        },
+                        "no-show": {
+                            "checked": true,
+                            "percent": 100,
+                            "stay-firstnight": 0
+                        },
+                        "prepayment": {
+                            "checked": false,
+                            "percent": 0,
+                            "stay-firstnight": 0,
+                            "date": null
+                        },
+                        "reschedule": {
+                            "checked": false,
+                            "date": null
+                        }
+                    },
+                    "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+                },
+                "rooms_literie": null,
+                "addedvalues": [
+                    {
+                        "category": "mealplan",
+                        "name": "fabulous breakfast included",
+                        "values": [],
+                        "sorting": 0
+                    }
+                ],
+                "garantie": true,
+                "code_ltdid": null,
+                "room_upgrade": 0,
+                "room_upgrade_to": null,
+                "is_partner": false,
+                "otaEnvEtab": 0,
+                "env": 0,
+                "plusadult": 2,
+                "rateType": "BOOKABLE",
+                "paymentType": "AT_HOTEL",
+                "snapshoot": true,
+                "isGoogleHotelAds": false,
+                "hbnet": null,
+                "hbttc": null,
+                "prixOLD2": 1797.84,
+                "detailPrice": {
+                    "Ttc": 1797.84,
+                    "priceDesplayed": 1816,
+                    "Sale": 1777.84,
+                    "HT": 1616.2181818181816,
+                    "TaxeExc": 20,
+                    "TaxeInc": 161.62181818181818,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 161.62181818181818
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "detailPrice_without_promo": {
+                    "Ttc": 1816,
+                    "priceDesplayed": 1816,
+                    "Sale": 1796,
+                    "HT": 1632.7272727272727,
+                    "TaxeExc": 20,
+                    "TaxeInc": 163.27272727272728,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 163.27272727272728
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "ocupation": "2_0",
+                "ttc_without_promoOLD": 1816,
+                "tax": {
+                    "inc": [
+                        {
+                            "txName": "tva",
+                            "txMontant": 10,
+                            "txFormule": 1,
+                            "txTypeMontant": 0,
+                            "txInc": true,
+                            "txMontantDisplay": 10,
+                            "txIssejour": false
+                        }
+                    ],
+                    "exc": [
+                        {
+                            "txName": "taxedesejour",
+                            "txMontant": 2.5,
+                            "txFormule": 3,
+                            "txTypeMontant": 1,
+                            "txInc": false,
+                            "txMontantDisplay": 2.5,
+                            "txIssejour": false
+                        }
+                    ]
+                },
+                "conditiondetail": {
+                    "prepaye": {
+                        "checked": false,
+                        "type": false,
+                        "nbr": 0
+                    },
+                    "show": {
+                        "checked": true,
+                        "type": false,
+                        "nbr": 100
+                    },
+                    "annulation": {
+                        "type": 9,
+                        "isHeur": null,
+                        "detail": []
+                    }
+                },
+                "ltId": 36628,
+                "child": "0",
+                "indexSearch": "260557_36166_2_0_1_bc"
+            },
+            "260562_36166_2_0_1": {
+                "name_room_ota": "suite with private terrace and pool view",
+                "hotel_id": "11242",
+                "ota": "booking",
+                "type_map": 1,
+                "roomtype_ota": {
+                    "room_name": "suite with private terrace and pool view-24839923",
+                    "items": [
+                        {
+                            "item_name": "fabulous breakfast included",
+                            "values": []
+                        },
+                        {
+                            "item_name": "non-refundable",
+                            "values": []
+                        },
+                        {
+                            "item_name": "",
+                            "values": []
+                        },
+                        {
+                            "item_name": "10% genius discount applied to the price before taxes and charges",
+                            "values": []
+                        },
+                        {
+                            "item_name": "only $x1 $x2",
+                            "values": {
+                                "val1": "1",
+                                "val2": "left on our site"
+                            }
+                        }
+                    ],
+                    "sleeps": "Max persons: 2"
+                },
+                "roomtype_wik": [
+                    "suite with private terrace and pool view-24839923",
+                    "bed&breakfast|non-refundable"
+                ],
+                "code_room": 260562,
+                "metrage": "100 m²",
+                "code_meal_paln": 2,
+                "code_sale_condition": 9,
+                "code_occupancy": 2,
+                "code_children": 0,
+                "searchedby": "2",
+                "price_html": "€ 1,924",
+                "price_desplayed": 1924,
+                "price": 1884.76,
+                "ttc": 1904.76,
+                "ht": 1730.909090909091,
+                "ht_without_promo": 1730.909090909091,
+                "ttc_without_promo": 1924,
+                "currency": "EUR",
+                "promottcht": "ttc",
+                "offer_freebreakfast": false,
+                "offer": {
+                    "2024-03-24": {
+                        "price_day_final": 481,
+                        "price_day": 481,
+                        "genius_price_day_final": 476.19,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Sunday",
+                                "price_day_promo": 476.19
+                            }
+                        ]
+                    },
+                    "2024-03-25": {
+                        "price_day_final": 481,
+                        "price_day": 481,
+                        "genius_price_day_final": 476.19,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Monday",
+                                "price_day_promo": 476.19
+                            }
+                        ]
+                    },
+                    "2024-03-26": {
+                        "price_day_final": 481,
+                        "price_day": 481,
+                        "genius_price_day_final": 476.19,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Tuesday",
+                                "price_day_promo": 476.19
+                            }
+                        ]
+                    },
+                    "2024-03-27": {
+                        "price_day_final": 481,
+                        "price_day": 481,
+                        "genius_price_day_final": 476.19,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Wednesday",
+                                "price_day_promo": 476.19
+                            }
+                        ]
+                    }
+                },
+                "stock": 1,
+                "exchange_rate": 1,
+                "tax_exc_engine": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine": {
+                    "tva": 171.34181818181816
+                },
+                "tax_in": true,
+                "tax_exc_engine_without_promo": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine_without_promo": {
+                    "tva": 173.09090909090912
+                },
+                "tax_wh": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true
+                    },
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false
+                    }
+                ],
+                "code_ltid": null,
+                "uid": "booking65e5d6d96f3168.11901753",
+                "isbookingbasic": false,
+                "serial": "24839923_91142195_0_41_0",
+                "conditions_details": {
+                    "condition": {
+                        "annulation": {
+                            "type": "HF",
+                            "typeAnnulation": 9,
+                            "intervals": [
+                                {
+                                    "d": 0,
+                                    "a": "INF",
+                                    "p": 100,
+                                    "an-fn": 0
+                                }
+                            ]
+                        },
+                        "no-show": {
+                            "checked": true,
+                            "percent": 100,
+                            "stay-firstnight": 0
+                        },
+                        "prepayment": {
+                            "checked": false,
+                            "percent": 0,
+                            "stay-firstnight": 0,
+                            "date": null
+                        },
+                        "reschedule": {
+                            "checked": false,
+                            "date": null
+                        }
+                    },
+                    "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+                },
+                "rooms_literie": null,
+                "addedvalues": [
+                    {
+                        "category": "mealplan",
+                        "name": "fabulous breakfast included",
+                        "values": [],
+                        "sorting": 0
+                    }
+                ],
+                "garantie": true,
+                "code_ltdid": null,
+                "room_upgrade": 0,
+                "room_upgrade_to": null,
+                "is_partner": false,
+                "otaEnvEtab": 0,
+                "env": 0,
+                "plusadult": 2,
+                "rateType": "BOOKABLE",
+                "paymentType": "AT_HOTEL",
+                "snapshoot": true,
+                "isGoogleHotelAds": false,
+                "hbnet": null,
+                "hbttc": null,
+                "prixOLD2": 1904.76,
+                "detailPrice": {
+                    "Ttc": 1904.76,
+                    "priceDesplayed": 1924,
+                    "Sale": 1884.76,
+                    "HT": 1713.418181818182,
+                    "TaxeExc": 20,
+                    "TaxeInc": 171.34181818181816,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 171.34181818181816
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "detailPrice_without_promo": {
+                    "Ttc": 1924,
+                    "priceDesplayed": 1924,
+                    "Sale": 1904,
+                    "HT": 1730.909090909091,
+                    "TaxeExc": 20,
+                    "TaxeInc": 173.09090909090912,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 173.09090909090912
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "ocupation": "2_0",
+                "ttc_without_promoOLD": 1924,
+                "tax": {
+                    "inc": [
+                        {
+                            "txName": "tva",
+                            "txMontant": 10,
+                            "txFormule": 1,
+                            "txTypeMontant": 0,
+                            "txInc": true,
+                            "txMontantDisplay": 10,
+                            "txIssejour": false
+                        }
+                    ],
+                    "exc": [
+                        {
+                            "txName": "taxedesejour",
+                            "txMontant": 2.5,
+                            "txFormule": 3,
+                            "txTypeMontant": 1,
+                            "txInc": false,
+                            "txMontantDisplay": 2.5,
+                            "txIssejour": false
+                        }
+                    ]
+                },
+                "conditiondetail": {
+                    "prepaye": {
+                        "checked": false,
+                        "type": false,
+                        "nbr": 0
+                    },
+                    "show": {
+                        "checked": true,
+                        "type": false,
+                        "nbr": 100
+                    },
+                    "annulation": {
+                        "type": 9,
+                        "isHeur": null,
+                        "detail": []
+                    }
+                },
+                "ltId": 36628,
+                "child": "0",
+                "indexSearch": "260562_36166_2_0_1_bc"
+            },
+            "260558_36166_2_0_1": {
+                "name_room_ota": "deluxe suite with private pool and garden",
+                "hotel_id": "11242",
+                "ota": "booking",
+                "type_map": 1,
+                "roomtype_ota": {
+                    "room_name": "deluxe suite with private pool and garden-24839904",
+                    "items": [
+                        {
+                            "item_name": "fabulous breakfast included",
+                            "values": []
+                        },
+                        {
+                            "item_name": "non-refundable",
+                            "values": []
+                        },
+                        {
+                            "item_name": "",
+                            "values": []
+                        },
+                        {
+                            "item_name": "10% genius discount applied to the price before taxes and charges",
+                            "values": []
+                        },
+                        {
+                            "item_name": "only $x1 $x2",
+                            "values": {
+                                "val1": "1",
+                                "val2": "left on our site"
+                            }
+                        }
+                    ],
+                    "sleeps": "Max persons: 2"
+                },
+                "roomtype_wik": [
+                    "deluxe suite with private pool and garden-24839904",
+                    "bed&breakfast|non-refundable"
+                ],
+                "code_room": 260558,
+                "metrage": "65 m²",
+                "code_meal_paln": 2,
+                "code_sale_condition": 9,
+                "code_occupancy": 2,
+                "code_children": 0,
+                "searchedby": "2",
+                "price_html": "€ 2,068",
+                "price_desplayed": 2068,
+                "price": 2027.32,
+                "ttc": 2047.32,
+                "ht": 1861.8181818181818,
+                "ht_without_promo": 1861.8181818181818,
+                "ttc_without_promo": 2068,
+                "currency": "EUR",
+                "promottcht": "ttc",
+                "offer_freebreakfast": false,
+                "offer": {
+                    "2024-03-24": {
+                        "price_day_final": 517,
+                        "price_day": 517,
+                        "genius_price_day_final": 511.83,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Sunday",
+                                "price_day_promo": 511.83
+                            }
+                        ]
+                    },
+                    "2024-03-25": {
+                        "price_day_final": 517,
+                        "price_day": 517,
+                        "genius_price_day_final": 511.83,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Monday",
+                                "price_day_promo": 511.83
+                            }
+                        ]
+                    },
+                    "2024-03-26": {
+                        "price_day_final": 517,
+                        "price_day": 517,
+                        "genius_price_day_final": 511.83,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Tuesday",
+                                "price_day_promo": 511.83
+                            }
+                        ]
+                    },
+                    "2024-03-27": {
+                        "price_day_final": 517,
+                        "price_day": 517,
+                        "genius_price_day_final": 511.83,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Wednesday",
+                                "price_day_promo": 511.83
+                            }
+                        ]
+                    }
+                },
+                "stock": 1,
+                "exchange_rate": 1,
+                "tax_exc_engine": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine": {
+                    "tva": 184.30181818181816
+                },
+                "tax_in": true,
+                "tax_exc_engine_without_promo": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine_without_promo": {
+                    "tva": 186.18181818181816
+                },
+                "tax_wh": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true
+                    },
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false
+                    }
+                ],
+                "code_ltid": null,
+                "uid": "booking65e5d6d96f3168.11901753",
+                "isbookingbasic": false,
+                "serial": "24839904_91142195_0_41_0",
+                "conditions_details": {
+                    "condition": {
+                        "annulation": {
+                            "type": "HF",
+                            "typeAnnulation": 9,
+                            "intervals": [
+                                {
+                                    "d": 0,
+                                    "a": "INF",
+                                    "p": 100,
+                                    "an-fn": 0
+                                }
+                            ]
+                        },
+                        "no-show": {
+                            "checked": true,
+                            "percent": 100,
+                            "stay-firstnight": 0
+                        },
+                        "prepayment": {
+                            "checked": false,
+                            "percent": 0,
+                            "stay-firstnight": 0,
+                            "date": null
+                        },
+                        "reschedule": {
+                            "checked": false,
+                            "date": null
+                        }
+                    },
+                    "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+                },
+                "rooms_literie": null,
+                "addedvalues": [
+                    {
+                        "category": "mealplan",
+                        "name": "fabulous breakfast included",
+                        "values": [],
+                        "sorting": 0
+                    }
+                ],
+                "garantie": true,
+                "code_ltdid": null,
+                "room_upgrade": 0,
+                "room_upgrade_to": null,
+                "is_partner": false,
+                "otaEnvEtab": 0,
+                "env": 0,
+                "plusadult": 2,
+                "rateType": "BOOKABLE",
+                "paymentType": "AT_HOTEL",
+                "snapshoot": true,
+                "isGoogleHotelAds": false,
+                "hbnet": null,
+                "hbttc": null,
+                "prixOLD2": 2047.32,
+                "detailPrice": {
+                    "Ttc": 2047.32,
+                    "priceDesplayed": 2068,
+                    "Sale": 2027.32,
+                    "HT": 1843.0181818181818,
+                    "TaxeExc": 20,
+                    "TaxeInc": 184.30181818181816,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 184.30181818181816
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "detailPrice_without_promo": {
+                    "Ttc": 2068,
+                    "priceDesplayed": 2068,
+                    "Sale": 2048,
+                    "HT": 1861.8181818181818,
+                    "TaxeExc": 20,
+                    "TaxeInc": 186.18181818181816,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 186.18181818181816
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "ocupation": "2_0",
+                "ttc_without_promoOLD": 2068,
+                "tax": {
+                    "inc": [
+                        {
+                            "txName": "tva",
+                            "txMontant": 10,
+                            "txFormule": 1,
+                            "txTypeMontant": 0,
+                            "txInc": true,
+                            "txMontantDisplay": 10,
+                            "txIssejour": false
+                        }
+                    ],
+                    "exc": [
+                        {
+                            "txName": "taxedesejour",
+                            "txMontant": 2.5,
+                            "txFormule": 3,
+                            "txTypeMontant": 1,
+                            "txInc": false,
+                            "txMontantDisplay": 2.5,
+                            "txIssejour": false
+                        }
+                    ]
+                },
+                "conditiondetail": {
+                    "prepaye": {
+                        "checked": false,
+                        "type": false,
+                        "nbr": 0
+                    },
+                    "show": {
+                        "checked": true,
+                        "type": false,
+                        "nbr": 100
+                    },
+                    "annulation": {
+                        "type": 9,
+                        "isHeur": null,
+                        "detail": []
+                    }
+                },
+                "ltId": 36628,
+                "child": "0",
+                "indexSearch": "260558_36166_2_0_1_bc"
+            },
+            "260560_36166_2_0_1": {
+                "name_room_ota": "premium suite with private pool and private garden",
+                "hotel_id": "11242",
+                "ota": "booking",
+                "type_map": 1,
+                "roomtype_ota": {
+                    "room_name": "premium suite with private pool and private garden-24839906",
+                    "items": [
+                        {
+                            "item_name": "fabulous breakfast included",
+                            "values": []
+                        },
+                        {
+                            "item_name": "non-refundable",
+                            "values": []
+                        },
+                        {
+                            "item_name": "",
+                            "values": []
+                        },
+                        {
+                            "item_name": "10% genius discount applied to the price before taxes and charges",
+                            "values": []
+                        },
+                        {
+                            "item_name": "only $x1 $x2",
+                            "values": {
+                                "val1": "1",
+                                "val2": "left on our site"
+                            }
+                        }
+                    ],
+                    "sleeps": "Max persons: 2"
+                },
+                "roomtype_wik": [
+                    "premium suite with private pool and private garden-24839906",
+                    "bed&breakfast|non-refundable"
+                ],
+                "code_room": 260560,
+                "metrage": "80 m²",
+                "code_meal_paln": 2,
+                "code_sale_condition": 9,
+                "code_occupancy": 2,
+                "code_children": 0,
+                "searchedby": "2",
+                "price_html": "€ 2,212",
+                "price_desplayed": 2212,
+                "price": 2169.88,
+                "ttc": 2189.88,
+                "ht": 1992.7272727272727,
+                "ht_without_promo": 1992.7272727272727,
+                "ttc_without_promo": 2212,
+                "currency": "EUR",
+                "promottcht": "ttc",
+                "offer_freebreakfast": false,
+                "offer": {
+                    "2024-03-24": {
+                        "price_day_final": 553,
+                        "price_day": 553,
+                        "genius_price_day_final": 547.47,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Sunday",
+                                "price_day_promo": 547.47
+                            }
+                        ]
+                    },
+                    "2024-03-25": {
+                        "price_day_final": 553,
+                        "price_day": 553,
+                        "genius_price_day_final": 547.47,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Monday",
+                                "price_day_promo": 547.47
+                            }
+                        ]
+                    },
+                    "2024-03-26": {
+                        "price_day_final": 553,
+                        "price_day": 553,
+                        "genius_price_day_final": 547.47,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Tuesday",
+                                "price_day_promo": 547.47
+                            }
+                        ]
+                    },
+                    "2024-03-27": {
+                        "price_day_final": 553,
+                        "price_day": 553,
+                        "genius_price_day_final": 547.47,
+                        "genius": [
+                            {
+                                "id": 1452,
+                                "offer_type": "genius",
+                                "pourcentage": 1,
+                                "pourcentage_type": "percent",
+                                "day_name": "Wednesday",
+                                "price_day_promo": 547.47
+                            }
+                        ]
+                    }
+                },
+                "stock": 1,
+                "exchange_rate": 1,
+                "tax_exc_engine": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine": {
+                    "tva": 197.26181818181817
+                },
+                "tax_in": true,
+                "tax_exc_engine_without_promo": {
+                    "taxedesejour": 20
+                },
+                "tax_inc_engine_without_promo": {
+                    "tva": 199.27272727272728
+                },
+                "tax_wh": [
+                    {
+                        "txName": "tva",
+                        "txMontant": 10,
+                        "txFormule": 1,
+                        "txTypeMontant": 0,
+                        "txInc": true
+                    },
+                    {
+                        "txName": "taxedesejour",
+                        "txMontant": 2.5,
+                        "txFormule": 3,
+                        "txTypeMontant": 1,
+                        "txInc": false
+                    }
+                ],
+                "code_ltid": null,
+                "uid": "booking65e5d6d96f3168.11901753",
+                "isbookingbasic": false,
+                "serial": "24839906_91142195_0_41_0",
+                "conditions_details": {
+                    "condition": {
+                        "annulation": {
+                            "type": "HF",
+                            "typeAnnulation": 9,
+                            "intervals": [
+                                {
+                                    "d": 0,
+                                    "a": "INF",
+                                    "p": 100,
+                                    "an-fn": 0
+                                }
+                            ]
+                        },
+                        "no-show": {
+                            "checked": true,
+                            "percent": 100,
+                            "stay-firstnight": 0
+                        },
+                        "prepayment": {
+                            "checked": false,
+                            "percent": 0,
+                            "stay-firstnight": 0,
+                            "date": null
+                        },
+                        "reschedule": {
+                            "checked": false,
+                            "date": null
+                        }
+                    },
+                    "description": "non-refundable please note, if cancelled, modified or in case of no-show, the total price of the reservation will be charged."
+                },
+                "rooms_literie": null,
+                "addedvalues": [
+                    {
+                        "category": "mealplan",
+                        "name": "fabulous breakfast included",
+                        "values": [],
+                        "sorting": 0
+                    }
+                ],
+                "garantie": true,
+                "code_ltdid": null,
+                "room_upgrade": 0,
+                "room_upgrade_to": null,
+                "is_partner": false,
+                "otaEnvEtab": 0,
+                "env": 0,
+                "plusadult": 2,
+                "rateType": "BOOKABLE",
+                "paymentType": "AT_HOTEL",
+                "snapshoot": true,
+                "isGoogleHotelAds": false,
+                "hbnet": null,
+                "hbttc": null,
+                "prixOLD2": 2189.88,
+                "detailPrice": {
+                    "Ttc": 2189.88,
+                    "priceDesplayed": 2212,
+                    "Sale": 2169.88,
+                    "HT": 1972.618181818182,
+                    "TaxeExc": 20,
+                    "TaxeInc": 197.26181818181817,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 197.26181818181817
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "detailPrice_without_promo": {
+                    "Ttc": 2212,
+                    "priceDesplayed": 2212,
+                    "Sale": 2192,
+                    "HT": 1992.7272727272727,
+                    "TaxeExc": 20,
+                    "TaxeInc": 199.27272727272728,
+                    "details": {
+                        "inc": {
+                            "tva": {
+                                "name": "tva",
+                                "montant": 199.27272727272728
+                            }
+                        },
+                        "exc": {
+                            "taxedesejour": {
+                                "name": "taxedesejour",
+                                "montant": 20
+                            }
+                        }
+                    }
+                },
+                "ocupation": "2_0",
+                "ttc_without_promoOLD": 2212,
+                "tax": {
+                    "inc": [
+                        {
+                            "txName": "tva",
+                            "txMontant": 10,
+                            "txFormule": 1,
+                            "txTypeMontant": 0,
+                            "txInc": true,
+                            "txMontantDisplay": 10,
+                            "txIssejour": false
+                        }
+                    ],
+                    "exc": [
+                        {
+                            "txName": "taxedesejour",
+                            "txMontant": 2.5,
+                            "txFormule": 3,
+                            "txTypeMontant": 1,
+                            "txInc": false,
+                            "txMontantDisplay": 2.5,
+                            "txIssejour": false
+                        }
+                    ]
+                },
+                "conditiondetail": {
+                    "prepaye": {
+                        "checked": false,
+                        "type": false,
+                        "nbr": 0
+                    },
+                    "show": {
+                        "checked": true,
+                        "type": false,
+                        "nbr": 100
+                    },
+                    "annulation": {
+                        "type": 9,
+                        "isHeur": null,
+                        "detail": []
+                    }
+                },
+                "ltId": 36628,
+                "child": "0",
+                "indexSearch": "260560_36166_2_0_1_bc"
+            }
+        },
+        "hotel_id": "11242",
+        "enginesearch": "booking",
+        "genius_hotel": 3,
+        "genius_used": 3,
+        "UrlTaxes": "https://LINK/wikiapi/listtaxe/11242/booking",
+        "px": null,
+        "uid": "booking65e5d6d96f3168.11901753",
+        "html": "http://LINK/api/read_capture_html_from_gs/11242/2024-03-24/booking/booking65e5d6d96f3168.11901753/true",
+        "ds": "2024-03-24",
+        "de": "2024-03-28",
+        "exchange_rate": 1,
+        "device": "computer",
+        "currencyCodeHtml": "EUR",
+        "url": "https://www.booking.com/hotel/ma/sirayane-boutique-spa-marrakech.en-gb.html?checkin=2024-03-24;checkout=2024-03-28;selected_currency=EUR;group_adults=2;group_children=0;req_adults=2;req_children=0;no_rooms=1",
+        "rooms_not_map": [],
+        "items_not_map": [],
+        "cantmap": [
+            "",
+            "only $x1 $x2"
+        ],
+        "dismiss": [
+            "10% genius discount applied to the price before taxes and charges"
+        ],
+        "stopsell": [],
+        "empty_taxes": [],
+        "empty_ratelinedetail": [],
+        "otaEnvEtab": 0,
+        "env": 0,
+        "time": 17.608659982681274,
+        "urlcwr": [
+            "https://LINK/api/availability/booking/11242/2024-03-24/2024-03-28/EUR/computer/MA/AF/2/0?token=6wi7z63euih358bobqj&code_promo_source=12&no_rooms=1&screen=true&html=true&hb=0&app=checkprice&modeconnected=1"
+        ],
+        "notfoundroom": [],
+        "s": "DEPRECATED",
+        "urlcapture": "0",
+        "fromMongo": false,
+        "token": "hLklsM2NmOTkzNmNjMTQ3ZjY0MmM4ZjI3MzE1NjQ3MTA5MjViN2IzN2IzOGJkNzFlZDljNDU5NWNiZDg5ZTQyY2I3Zg3wObS"
+    }
+}
