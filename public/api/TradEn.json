@@ -167,18 +167,6 @@
                 ],
                 "3403-titer": "Pets"
             },
-            "GroupService": {
-                "1197-titer": "SPA",
-                "1198-titer": "DINING",
-                "1199-titer": "GENERAL SERVICES",
-                "1200-titer": "EVENTS"
-            },
-            "Page": {
-                "59592-description": "<p>Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses, by snowy Atlas Mountains and luxuriant vegetation, the Sirayane is an invitation to the change of scene and a well-being.<br />\nLuxury Boutique Hotel &amp; Spa, the Sirayane is designed by famous architect Imaad Rahmouni (www.imaadrahmouni.com). The Sirayane enjoys an exceptional and unique decoration the part of its architecture and its purified design, reserved for the amateurs of luxuries and simplicity. The Sirayane has, on an area of two hectares, 40 rooms and Suites. The Sirayane has a Mini-tennis court.</p>\n\n<p>An exceptional service of more than 50 people carefully selected from their human and professional qualities to supply to the hosts of the Sirayane a personalized high-quality service and allow them to enjoy their stay far from the hustle of the medina.<br />\nA free daily shuttle service towards the medina will answer our hosts wishes to visit all that Marrakech offers in term of monuments, gardens and museums.</p>\n\n<p>The last renovation dates from September 2020<br />\nOur second swimming pool&nbsp;of 17m heated all year round . Reserved for adults.</p>\n"
-            },
-            "PopulairFacilities": {
-                "766-description": "[{\"name_en\":\"Swimming pool\",\"icon\":\"-iconset-pool\",\"text\":\"2 swimming pools\"},{\"name_en\":\"Free WiFi Internet Access Included\",\"icon\":\"-iconset-wifi\",\"text\":\"Free WiFi\"},{\"name_en\":\"Spa & Wellness Centre\",\"icon\":\"-iconset-spa\",\"text\":\"Spa and wellness centre\"},{\"name_en\":\"Airport Shuttle\",\"icon\":\"-iconset-shuttle\",\"text\":\"Airport shuttle\"},{\"name_en\":\"Free Parking\",\"icon\":\"-iconset-parking_sign\",\"text\":\"Free parking\"},{\"name_en\":\"Coffee\\/Tea maker\",\"icon\":\"-iconset-tea_maker\",\"text\":\"Tea\\/coffee maker in all rooms\"},{\"name_en\":\"Bar\",\"icon\":\"-iconset-bar\",\"text\":\"Bar\"}]"
-            },
             "Service": {
                 "4915-description": "The Sirayane Spa welcomes you in a magnificent set with its colourful domes and oriental style atmosphere every day from 10am to 8pm. It offers, in addition to outdoor massages, different treatments for men and woman .",
                 "4915-titer": "SPA",
@@ -232,6 +220,18 @@
                 "4940-titer": "RECEPTION",
                 "4941-description": "If you want to celebrate your wedding, seminar, meeting or unforgettable special event, Sirayane Boutique Hotel & Spa is the perfect place for your needs.\nN.B: privatization possibility is on request.",
                 "4941-titer": "Wedding & Events"
+            },
+            "GroupService": {
+                "1197-titer": "SPA",
+                "1198-titer": "DINING",
+                "1199-titer": "GENERAL SERVICES",
+                "1200-titer": "EVENTS"
+            },
+            "Page": {
+                "59592-description": "<p>Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses, by snowy Atlas Mountains and luxuriant vegetation, the Sirayane is an invitation to the change of scene and a well-being.<br />\nLuxury Boutique Hotel &amp; Spa, the Sirayane is designed by famous architect Imaad Rahmouni (www.imaadrahmouni.com). The Sirayane enjoys an exceptional and unique decoration the part of its architecture and its purified design, reserved for the amateurs of luxuries and simplicity. The Sirayane has, on an area of two hectares, 40 rooms and Suites. The Sirayane has a Mini-tennis court.</p>\n\n<p>An exceptional service of more than 50 people carefully selected from their human and professional qualities to supply to the hosts of the Sirayane a personalized high-quality service and allow them to enjoy their stay far from the hustle of the medina.<br />\nA free daily shuttle service towards the medina will answer our hosts wishes to visit all that Marrakech offers in term of monuments, gardens and museums.</p>\n\n<p>The last renovation dates from September 2020<br />\nOur second swimming pool&nbsp;of 17m heated all year round . Reserved for adults.</p>\n"
+            },
+            "PopulairFacilities": {
+                "766-description": "[{\"name_en\":\"Swimming pool\",\"icon\":\"-iconset-pool\",\"text\":\"2 swimming pools\"},{\"name_en\":\"Free WiFi Internet Access Included\",\"icon\":\"-iconset-wifi\",\"text\":\"Free WiFi\"},{\"name_en\":\"Spa & Wellness Centre\",\"icon\":\"-iconset-spa\",\"text\":\"Spa and wellness centre\"},{\"name_en\":\"Airport Shuttle\",\"icon\":\"-iconset-shuttle\",\"text\":\"Airport shuttle\"},{\"name_en\":\"Free Parking\",\"icon\":\"-iconset-parking_sign\",\"text\":\"Free parking\"},{\"name_en\":\"Coffee\\/Tea maker\",\"icon\":\"-iconset-tea_maker\",\"text\":\"Tea\\/coffee maker in all rooms\"},{\"name_en\":\"Bar\",\"icon\":\"-iconset-bar\",\"text\":\"Bar\"}]"
             },
             "ToKnow": {
                 "661-description": "Please note that the cost of the Full Board option excludes drinks.<p>In response to Coronavirus (COVID-19), additional safety and sanitation measures are currently in effect at this property.</p><p>License number: 40000MH0562</p>"

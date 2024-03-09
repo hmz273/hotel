@@ -1,29 +1,22 @@
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { promises as fs } from 'fs';
-
+import RoomModel from "./RoomModel";
+import siteInfo from "../../public/api/SiteInfo.json"
+import tradEn from "../../public/api/TradEn.json"
 const Rooms = async() => {
   
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [data, setData] = useState<any>(null);
+  const [trdata, setTrData] = useState<any>(null);
 
-  const siteInfo = await fs.readFile(process.cwd() + '/public/api/SiteInfo.json', 'utf8');
-  const data = JSON.parse(siteInfo);
-  const rooms = data.chamber;
-  // console.log(rooms.id);
-
-//   const tradEn = await fs.readFile(process.cwd() + '/public/api/TradEn.json', 'utf8');
-//   const trdata = JSON.parse(tradEn);
-//   const trrooms = trdata.translations.en.Chamber;
-//   const phrase = Object.keys(trrooms)[0];
-//   const numbers = parseInt(phrase.match(/\d+/)![0]);
-// console.log(numbers);
-  // console.log(phrase);
-  // const phrase: string = "260555-description";
-// const numbers: number = parseInt(phrase.match(/\d+/)![0]);
-
-// console.log(numbers); // Output: 260555
-  
-  
-
+  useEffect(() => {
+    setTimeout(() => {
+      setData(siteInfo); 
+      setTrData(tradEn); 
+      setIsLoading(false);
+    }, 2000); 
+  }, []);
 
 
   return (
@@ -42,9 +35,35 @@ const Rooms = async() => {
             voluptatem nisi quos minus ipsum?
           </p>
         </div>
+        {isLoading ? (
+      
+<div role="status" className="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700">
+    <div className="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+        <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+            <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM10.5 6a1.5 1.5 0 1 1 0 2.999A1.5 1.5 0 0 1 10.5 6Zm2.221 10.515a1 1 0 0 1-.858.485h-8a1 1 0 0 1-.9-1.43L5.6 10.039a.978.978 0 0 1 .936-.57 1 1 0 0 1 .9.632l1.181 2.981.541-1a.945.945 0 0 1 .883-.522 1 1 0 0 1 .879.529l1.832 3.438a1 1 0 0 1-.031.988Z"/>
+            <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z"/>
+        </svg>
+    </div>
+    <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+    <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+    <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+    <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+    <div className="flex items-center mt-4">
+       <svg className="w-10 h-10 me-3 text-gray-200 dark:text-gray-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+        </svg>
+        <div>
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32 mb-2"></div>
+            <div className="w-48 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+        </div>
+    </div>
+    <span className="sr-only">Loading...</span>
+</div>
+
+    ) : (
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           
-        {rooms.map((room, index) => (
+        {data && data.chamber.map((room, index) => (
 
           <div key={index} className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               
@@ -59,13 +78,10 @@ const Rooms = async() => {
             <div className="px-5 pb-5">
               <div>
                 <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  Chambre Privilège Avec Terrasse Privée
-                  {/* {trrooms} */}
-                   {/* {room.id} */}
+                   {trdata.translations.en.Chamber[room.id+"-titer"]}
                 </h5>
                 <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          These rooms have a private terrace. The bathroom has
-                          an italian shower and seperate toilet.
+                {trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '').length > 100 ? trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '').substring(0, 100) + '...' : trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '')}
                         </p>
               </div>
               <div className="flex items-center justify-between">
@@ -85,227 +101,14 @@ const Rooms = async() => {
                 </div>
 
                 {/* <!-- Main modal --> */}
-                <div
-                  id="extralarge-modal"
-                  tabIndex={-1}
-                  aria-hidden="true"
-                  className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
-                >
-                  <div className="relative p-4 w-full max-w-2xl max-h-full">
-                    {/* <!-- Modal content --> */}
-                    <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                      {/* <!-- Modal header --> */}
-                      <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                        <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                          Room Details
-                        </h3>
-                        <button
-                          type="button"
-                          className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                          data-modal-hide="extralarge-modal"
-                        >
-                          <svg
-                            className="w-3 h-3"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 14"
-                          >
-                            <path
-                              stroke="currentColor"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                            />
-                          </svg>
-                          <span className="sr-only">Close modal</span>
-                        </button>
-                      </div>
-                      {/* <!-- Modal body --> */}
-                      <div className="p-4 md:p-5 space-y-4">
-                        <div
-                          id="default-carousel"
-                          className="relative w-full"
-                          data-carousel="slide"
-                        >
-                          {/* <!-- Carousel wrapper --> */}
-                          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-                            {/* <!-- Item 1 --> */}
-                            { room.img.map((pic, index)=>(
-            
-                            <div
-                            key={index}
-                              className="hidden duration-700 ease-in-out"
-                              data-carousel-item
-                            >
-                              <img
-                                src={`https://pics.uncubus.tech/images/11242/upload/500X257/${pic}`}
-                                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                                alt="..."
-                              />
-                            </div>
-            ))}
-                            
-                          </div>
-                          {/* <!-- Slider indicators --> */}
-                          <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                            <button
-                              type="button"
-                              className="w-3 h-3 rounded-full"
-                              aria-current="true"
-                              aria-label="Slide 1"
-                              data-carousel-slide-to="0"
-                            ></button>
-                            <button
-                              type="button"
-                              className="w-3 h-3 rounded-full"
-                              aria-current="false"
-                              aria-label="Slide 2"
-                              data-carousel-slide-to="1"
-                            ></button>
-                            <button
-                              type="button"
-                              className="w-3 h-3 rounded-full"
-                              aria-current="false"
-                              aria-label="Slide 3"
-                              data-carousel-slide-to="2"
-                            ></button>
-                            <button
-                              type="button"
-                              className="w-3 h-3 rounded-full"
-                              aria-current="false"
-                              aria-label="Slide 4"
-                              data-carousel-slide-to="3"
-                            ></button>
-                            <button
-                              type="button"
-                              className="w-3 h-3 rounded-full"
-                              aria-current="false"
-                              aria-label="Slide 5"
-                              data-carousel-slide-to="4"
-                            ></button>
-                          </div>
-                          {/* <!-- Slider controls --> */}
-                          <button
-                            type="button"
-                            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-prev
-                          >
-                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                              <svg
-                                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 6 10"
-                              >
-                                <path
-                                  stroke="currentColor"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
-                                  d="M5 1 1 5l4 4"
-                                />
-                              </svg>
-                              <span className="sr-only">Previous</span>
-                            </span>
-                          </button>
-                          <button
-                            type="button"
-                            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                            data-carousel-next
-                          >
-                            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                              <svg
-                                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 6 10"
-                              >
-                                <path
-                                  stroke="currentColor"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                  stroke-width="2"
-                                  d="m1 9 4-4-4-4"
-                                />
-                              </svg>
-                              <span className="sr-only">Next</span>
-                            </span>
-                          </button>
-                        </div>
-
-                        <h3 className="text-xl text-left font-semibold text-gray-900 dark:text-white">
-                          Room Name
-                        </h3>
-                        <div className="flex items-center justify-between">
-                          <span className="font-semibold text-gray-900 dark:text-white">
-                            Room size : {room.surface}m²
-                          </span>
-                          <span className="font-semibold text-gray-900 dark:text-white">
-                            Max persons : {room.chamberMaxPers}
-                          </span>
-                        </div>
-                        <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                        {room.isFumeur ? 'Smoking room' : 'Non-smoking room'}
-                          <span>
-                            <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                              1 Queen size or 2 Single bed(s)
-                            </p>
-                          </span>
-                        </p>
-                        <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          These rooms have a private terrace. The bathroom has
-                          an italian shower and seperate toilet. It includes
-                          free tea and pastries upon arrival and a courtesy tray
-                          as well as a turn down service in the evening.
-                        </p>
-                        <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          Children aged 7 years and older or adult is charged
-                          EUR 40 per person per night in an extra bed.
-                        </p>
-                        <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          All children under 7 years stay free of charge for
-                          extra beds.
-                        </p>
-                        <h3 className="text-xl text-left font-semibold text-gray-900 dark:text-white">
-                          Room Amenities :
-                        </h3>
-                        <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                          Television Telephone Flat-screen TV Safe for laptop CD
-                          player DVD player Radio Computer Satellite Channels
-                          Air Conditioning Safety Deposit Box DESK Dressing room
-                          Heating Private Entrance Steamer on request
-                          Soundproofing Ironing Facilities Carpet Tiled / Marble
-                          Extra Long Beds ( 2 meters long) dryer Socket near the
-                          bed Electric Kettle Minibar Coffee / tea kettle Shower
-                          Hairdryer Welcome product Slippers Bathrobe Toilet
-                          paper Toilet Terrace Balcony Inner courtyard view
-                          Wake-up service Towels Wake Up Service/Alarm Clock
-                          Upper floors accessible by stairs only
-                        </p>
-                      </div>
-                      {/* <!-- Modal footer --> */}
-                      <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                        <button
-                          data-modal-hide="extralarge-modal"
-                          type="button"
-                          className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
-                        >
-                          Book Now
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <RoomModel room={room} trrooms={trdata.translations.en.Chamber}/>
               </div>
             </div>
           </div>
           
         ))}
         </div>
+        )}
       </div>
     </section>
   );
