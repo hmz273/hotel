@@ -1,6 +1,7 @@
 {
-    "comments": {
-        "TripAdvisor": {
+    "comments": [
+        {
+            "commentEngine": "TripAdvisor",
             "en": [
                 {
                     "commentId": 3133543,
@@ -2092,7 +2093,8 @@
                 }
             ]
         },
-        "booking": {
+        {
+            "commentEngine": "Booking",
             "en": [
                 {
                     "commentId": 4704587,
@@ -4316,7 +4318,7 @@
                 }
             ]
         }
-    },
+    ],
     "etablissement": {
         "etabChekPriceJs": "prod",
         "etabBookingEngine": {
@@ -4683,36 +4685,6 @@
                 "909eeaec9d0f0a13d9d8e607bcb130c8.jpg",
                 "2281b69eb75ba4721786bb00672d2131.jpg",
                 "46ab73d0dc36c13d62b7be93c40bb718.jpg"
-            ],
-            "lessprix": null,
-            "datelessprix": null
-        },
-        {
-            "id": 268848,
-            "isFumeur": false,
-            "isDeleted": false,
-            "isBookingBasic": true,
-            "surface": 25,
-            "maxoccup": "2_2",
-            "tarifdyn": false,
-            "chamberCategorie": "chambre",
-            "chamberMaxPers": 4,
-            "lit": {
-                "2_2": [
-                    {
-                        "key": 0,
-                        "value": [
-                            {
-                                "nbr": 1,
-                                "id": "choisiparetablissement"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "hasimage": true,
-            "img": [
-                "5e7caa18ac4a59cfbca0a24fc5cffe74.jpg"
             ],
             "lessprix": null,
             "datelessprix": null

@@ -175,7 +175,7 @@ const RoomModel = ({room, trrooms}) => {
                           </span>
                         </p>
                         <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                        {trrooms[room.id+"-description"]}
+                        {trrooms[room.id+"-description"].replace(/<[^>]+>/g, '')}
                         </p>
                         <h3 className="text-xl text-left font-semibold text-gray-900 dark:text-white">
                           Room Amenities :

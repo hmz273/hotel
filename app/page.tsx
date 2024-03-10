@@ -7,10 +7,9 @@ import Equipment from "./compoment/Equipment";
 import Services from "./compoment/Services";
 import Partners from "./compoment/Partners";
 import Gallery from "./compoment/Gallery";
-import Testimonial from "./compoment/Testimonial";
 import Contact from "./compoment/Contact";
 import Footer from "./compoment/Footer";
-
+import Tab from "./compoment/Tab";
 const page = () => {
   return (
     <>
@@ -24,7 +23,7 @@ const page = () => {
       <Services />
       <Partners />
       <Gallery />
-      <Testimonial />
+      <Tab />
       <Contact />
       <Footer />
       </div>
