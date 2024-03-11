@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RoomModel = ({room, trrooms}) => {
-    console.log(room, trrooms);
+
   return (
     <div
                   id="extralarge-modal"
