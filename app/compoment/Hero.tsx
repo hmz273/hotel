@@ -55,7 +55,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="md:z-30 absolute bottom-6 left-6 max-w-md mx-auto bg-purple-100 p-8 rounded-xl">
+      <div className="flex md:z-30 absolute bottom-6 left-6 bg-purple-100 p-8 rounded-xl">
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
           <h1 className="text-center text-xl font-bold leading-tight tracking-tight text-gray-800 md:text-2xl dark:text-white">Price Match, Made Simple</h1>
           <label htmlFor="checkInDate" className="block text-sm font-medium text-gray-700">Check-in Date:</label>

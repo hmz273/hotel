@@ -7,12 +7,10 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
               <div>
                 <h1 className="text-4xl font-extrabold text-white">
-                  Get in Touch
+                Sirayane Boutique Hotel & Spa Marrakech
                 </h1>
                 <p className="text-sm text-gray-400 mt-3">
-                  Have some big idea or brand to develop and need help? Then
-                  reach out we'd love to hear about your project and provide
-                  help.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta nihil, nulla nobis laudantium consequuntur voluptas numquam reiciendis ipsum perspiciatis nemo, optio, nesciunt distinctio fugit autem nam? Dolore, consequatur eius.
                 </p>
                 <ul className="mt-12 space-y-8">
                   <li className="flex items-center">
@@ -30,8 +28,9 @@ const Contact = () => {
                     </svg>
                     <a
                       href="javascript:void(0)"
-                      className="text-white text-sm ml-3"
+                      className="text-white text-sm ml-3 flex flex-col"
                     >
+                      <strong>info@example.com</strong>
                       <strong>info@example.com</strong>
                     </a>
                   </li>
@@ -50,8 +49,10 @@ const Contact = () => {
                     </svg>
                     <a
                       href="javascript:void(0)"
-                      className="text-white text-sm ml-3"
+                      className="text-white text-sm ml-3 flex flex-col"
                     >
+                      <strong>+158 996 888</strong>
+                      <strong>+158 996 888</strong>
                       <strong>+158 996 888</strong>
                     </a>
                   </li>
