@@ -21,7 +21,8 @@ const Equipment = () => {
 
 
   return (
-    <section
+    <section data-aos="fade-up"
+    data-aos-duration="3000"
           className="my-6 py-10 mx-auto max-w-screen-xl"
           id="accordion-collapse"
           data-accordion="collapse"

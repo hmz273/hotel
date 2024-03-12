@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
       </head>
       <body className={inter.className}>{children}
@@ -24,7 +25,10 @@ export default function RootLayout({
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
       <script src="../path/to/flowbite/dist/datepicker.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
-
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       </body>
     </html>
   );

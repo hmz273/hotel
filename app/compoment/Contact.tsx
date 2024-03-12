@@ -1,17 +1,44 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
+import siteInfo from "../../public/api/SiteInfo.json"
+
 
 const Contact = () => {
+
+
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [data, setData] = useState<any>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setData(siteInfo.etablissement); 
+      setIsLoading(false);
+    }, 2000); 
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
+
   return (
-    <section className="w-full my-6 py-12 rounded-2xl mx-auto max-w-screen-xl">
+    <section id='Contact' data-aos="fade-up"
+    data-aos-duration="3000" className="w-full my-6 py-12 rounded-2xl mx-auto max-w-screen-xl">
           <div className="max-w-6xl p-4 mx-auto bg-[#2e0249] rounded-lg">
             <div className="grid md:grid-cols-2 items-center gap-16 sm:p-10 p-4 font-[sans-serif]">
-              <div>
+            {/* {data && data.map((info, index) => ( */}
+
+            
+              <><div >
                 <h1 className="text-4xl font-extrabold text-white">
-                Sirayane Boutique Hotel & Spa Marrakech
+                  {data?.etablissementNom}
                 </h1>
-                <p className="text-sm text-gray-400 mt-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta nihil, nulla nobis laudantium consequuntur voluptas numquam reiciendis ipsum perspiciatis nemo, optio, nesciunt distinctio fugit autem nam? Dolore, consequatur eius.
-                </p>
                 <ul className="mt-12 space-y-8">
                   <li className="flex items-center">
                     <svg
@@ -23,15 +50,15 @@ const Contact = () => {
                     >
                       <path
                         d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
-                        data-original="#000000"
-                      />
+                        data-original="#000000" />
                     </svg>
                     <a
                       href="javascript:void(0)"
                       className="text-white text-sm ml-3 flex flex-col"
                     >
-                      <strong>info@example.com</strong>
-                      <strong>info@example.com</strong>
+{data && data.etabMail.map((mail, index) => (
+                      <div key={index}><strong>{mail}</strong></div>
+                      ))}
                     </a>
                   </li>
                   <li className="flex items-center">
@@ -47,14 +74,17 @@ const Contact = () => {
                         data-original="#000000"
                       ></path>
                     </svg>
+                    {data && data.phones.map((ph, index) => (
                     <a
+                    key={index}
                       href="javascript:void(0)"
                       className="text-white text-sm ml-3 flex flex-col"
                     >
-                      <strong>+158 996 888</strong>
-                      <strong>+158 996 888</strong>
-                      <strong>+158 996 888</strong>
+                      <strong>{ph.tel}</strong>
+                      <strong>{ph.fax}</strong>
+                      <strong>{ph.mobile}</strong>
                     </a>
+                    ))}
                   </li>
                   <li className="flex items-center">
                     <svg
@@ -77,13 +107,13 @@ const Contact = () => {
                       href="javascript:void(0)"
                       className="text-white text-sm ml-3"
                     >
-                      <strong>123 Street 256 House</strong>
+                      <strong>{data?.etabAdresse},{data?.etabCodepost} {data?.etabVille}. {data?.etabPays}</strong>
                     </a>
                   </li>
                 </ul>
                 <ul className="flex mt-12 space-x-4">
                   <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <a href="javascript:void(0)">
+                    <a href={data?.sFacebook}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18px"
@@ -93,29 +123,12 @@ const Contact = () => {
                       >
                         <path
                           d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
-                          data-original="#000000"
-                        />
+                          data-original="#000000" />
                       </svg>
                     </a>
                   </li>
                   <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <a href="javascript:void(0)">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="18px"
-                        height="18px"
-                        fill="#fff"
-                        viewBox="0 0 511 512"
-                      >
-                        <path
-                          d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
-                          data-original="#000000"
-                        />
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="bg-[#a91079] hover:bg-[#a91079e2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <a href="javascript:void(0)">
+                    <a href={data?.sInstagram}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18px"
@@ -128,52 +141,48 @@ const Contact = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div className="bg-gray-200 p-6 rounded-lg">
-                <form className="mt-8 space-y-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]"
-                  />
-                  <textarea
-                    placeholder="Message"
-                    rows={6}
-                    className="w-full rounded-md px-4 text-sm pt-3 outline-[#a91079]"
-                  ></textarea>
-                  <button
-                    type="button"
-                    className="text-white bg-indigo-900 hover:bg-[#a91079e2] font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16px"
-                      height="16px"
-                      fill="#fff"
-                      className="mr-2"
-                      viewBox="0 0 548.244 548.244"
+              </div><div className="bg-gray-200 p-6 rounded-lg">
+                  <form className="mt-8 space-y-4">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]" />
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]" />
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      className="w-full rounded-md py-3 px-4 text-sm outline-[#a91079]" />
+                    <textarea
+                      placeholder="Message"
+                      rows={6}
+                      className="w-full rounded-md px-4 text-sm pt-3 outline-[#a91079]"
+                    ></textarea>
+                    <button
+                      type="button"
+                      className="text-white bg-indigo-900 hover:bg-[#a91079e2] font-semibold rounded-md text-sm px-4 py-3 flex items-center justify-center w-full"
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                        clip-rule="evenodd"
-                        data-original="#000000"
-                      />
-                    </svg>
-                    Send Message
-                  </button>
-                </form>
-              </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16px"
+                        height="16px"
+                        fill="#fff"
+                        className="mr-2"
+                        viewBox="0 0 548.244 548.244"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                          clip-rule="evenodd"
+                          data-original="#000000" />
+                      </svg>
+                      Send Message
+                    </button>
+                  </form>
+                </div></>
+{/* ))} */}
             </div>
           </div>
         </section>

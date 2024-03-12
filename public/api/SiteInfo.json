@@ -227,20 +227,20 @@
             "euromastercard",
             "americanexpress"
         ],
-        "phones": {
-            "tel": [
+        "phones": [{
+            "tel":
                 "00212 5 25 11 88 80"
-            ],
-            "fax": [
+            ,
+            "fax":
                 "00212 5 25 11 88 81"
-            ],
-            "mobile": [
+            ,
+            "mobile":
                 "00212 6 60 11 57 51"
-            ],
-            "googlemybusiness": [
+            ,
+            "googlemybusiness":
                 "0525-118880"
-            ]
-        },
+        
+        }],
         "isprod": true,
         "statusEtablissement": 1,
         "reseausocial": [

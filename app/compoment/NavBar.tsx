@@ -9,11 +9,11 @@ const NavBar = () => {
         className="flex items-center space-x-3 rtl:space-x-reverse"
       >
         <img
-          src="https://flowbite.com/docs/images/logo.svg"
-          className="h-8"
-          alt="Flowbite Logo"
-        />
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  src="https://pics.uncubus.tech/images/11242/upload/be88bb7d0090acfe694ae3b2b4b3e3ad.jpg"
+                  className="h-8"
+                  alt="Siraya"
+                />
+        <span className="self-center text-2xl font-semibold text-purple-800 whitespace-nowrap dark:text-white">
           Siraya
         </span>
       </a>

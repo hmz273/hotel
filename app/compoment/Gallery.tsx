@@ -17,7 +17,8 @@ const Gallery = () => {
 
   return (
     
-    <section className="w-full my-6 mx-auto max-w-screen-xl">
+    <section data-aos="fade-up"
+    data-aos-duration="3000" className="w-full my-6 mx-auto max-w-screen-xl">
           <div className=" mb-8 max-w-screen-sm lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-violet-700 dark:text-white">
               Gallery
