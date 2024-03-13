@@ -1,10 +1,10 @@
 import React from 'react'
 
-const RoomModel = ({room, trrooms}) => {
+const RoomModel = ({room, trrooms, index}) => {
 
   return (
     <div
-                  id="extralarge-modal"
+                  id={index}
                   tabIndex={-1}
                   aria-hidden="true"
                   className="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
@@ -20,7 +20,7 @@ const RoomModel = ({room, trrooms}) => {
                         <button
                           type="button"
                           className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                          data-modal-hide="extralarge-modal"
+                          data-modal-hide={index}
                         >
                           <svg
                             className="w-3 h-3"
@@ -197,7 +197,7 @@ const RoomModel = ({room, trrooms}) => {
                       {/* <!-- Modal footer --> */}
                       <div className="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
                         <button
-                          data-modal-hide="extralarge-modal"
+                          data-modal-hide={index}
                           type="button"
                           className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
                         >

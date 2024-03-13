@@ -1,10 +1,10 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
 import RoomModel from "./RoomModel";
 import siteInfo from "../../public/api/SiteInfo.json"
 import tradEn from "../../public/api/TradEn.json"
-const Rooms = async() => {
+import RoomCard from './RoomCard';
+const Rooms = () => {
   
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [data, setData] = useState<any>(null);
@@ -61,53 +61,11 @@ const Rooms = async() => {
 </div>
 
     ) : (
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          
-        {data && data.chamber.map((room, index) => (
-
-          <div key={index} className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              
-            <div>
-              <img
-                className="pb-4 rounded-t-lg"
-                src={`https://pics.uncubus.tech/images/11242/upload/500X257/${room.img[0]}`}
-                alt="product image"
-              />
-            </div>
-
-            <div className="px-5 pb-5">
-              <div>
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                   {trdata.translations.en.Chamber[room.id+"-titer"]}
-                </h5>
-                <p className="text-base text-left leading-relaxed text-gray-500 dark:text-gray-400">
-                {trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '').length > 100 ? trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '').substring(0, 100) + '...' : trdata.translations.en.Chamber[room.id+"-description"].replace(/<[^>]+>/g, '')}
-                        </p>
-              </div>
-              <div className="flex items-center justify-between">
-              <span className="font-semibold text-gray-900 dark:text-white">
-                            
-                          </span>
-                {/* <!-- Modal toggle --> */}
-                <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-                  
-                  <button
-                    data-modal-target="extralarge-modal"
-                    data-modal-toggle="extralarge-modal"
-                    type="button"
-                  >
-                    Read More
-                  </button>
-                </div>
-
-                {/* <!-- Main modal --> */}
-                <RoomModel room={room} trrooms={trdata.translations.en.Chamber}/>
-              </div>
-            </div>
-          </div>
-          
-        ))}
-        </div>
+      <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      {data && data.chamber.map((room, index) => (
+        <RoomCard index={index} room={room} trdata={trdata} />
+      ))}
+    </div>
         )}
       </div>
     </section>
@@ -115,4 +73,4 @@ const Rooms = async() => {
 };
 
 
-export default dynamic(() => Promise.resolve(Rooms), { ssr: false });
+export default Rooms;
