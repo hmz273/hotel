@@ -1,11 +1,14 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import CalendrierPrix from "../../public/api/CalendrierPrix.json"
+
 
 const Hero = () => {
   const [checkInDate, setCheckInDate] = useState('');
   const [checkOutDate, setCheckOutDate] = useState('');
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
+  const [isSearching, setIsSearching] = useState<boolean>(false);
 
   const handleAdultsChange = (e) => {
     setAdults(e.target.value);
@@ -24,9 +27,18 @@ const Hero = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic to search available rooms and calculate total price
+    setIsSearching(true)
+
     console.log('Check-in Date:', checkInDate, 'Check-out Date:', checkOutDate, 'adults:', adults, 'children:', children);
   };
+  const [data, setData] = useState<any>(null);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setData(CalendrierPrix.response.bestprice);
+    }, 2000); 
+  }, []);
+  
 
   return (
     <section id="Home" className="static z-0">
@@ -106,6 +118,28 @@ const Hero = () => {
             Search Rooms
           </button>
         </form>
+{isSearching ? (
+        <div className="flex flex-col">
+        
+<div className="block mb-4 ml-6 max-w-sm h-56 w-72 p-6 bg-gray-100 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+<h5 className="mb-2 text-xl font-bold tracking-tight text-gray-800 dark:text-white">Starting price taxes and fees included</h5>
+<div className="my-6 flex items-center justify-between">
+<span className="text-gray-600 font-medium text-sm text-center">{data?.ota}</span>
+            <span className="text-gray-600 font-medium text-sm text-center">{data?.ttc} {data?.currency}</span>
+        </div>
+        <button type="submit" className="w-full text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Snapshot proof</button>
+
+</div>
+<div className="block ml-6 max-w-sm h-56 w-72 p-6 bg-gray-100 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+<h5 className="mb-2 text-xl font-bold tracking-tight text-gray-800 pb-4 dark:text-white text-center">Book Direct</h5>
+<p className="font-normal  text-gray-700 dark:text-gray-400 text-center my-2 line-through">{data?.ttc_without_promo} {data?.currency}</p>
+<p className="font-normal text-2xl text-gray-700 dark:text-gray-400 text-center my-2">{data?.ttc} {data?.currency}
+</p>
+</div>
+        </div>
+) : (<div></div>)}
       </div>
     </section>
   );
