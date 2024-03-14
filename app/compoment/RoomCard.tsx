@@ -1,7 +1,7 @@
 import React from 'react';
 import RoomModel from "./RoomModel";
 
-const RoomCard = ({ room, trdata, index }) => {
+const RoomCard = ({ room, trdata, onReadMore }) => {
   return (
     <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div>
@@ -24,12 +24,12 @@ const RoomCard = ({ room, trdata, index }) => {
         <div className="flex items-center justify-between">
           <span className="font-semibold text-gray-900 dark:text-white"></span>
           <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-            <button data-modal-target={index} data-modal-toggle={index} type="button">
+            <button onClick={() => onReadMore(room.id)} type="button">
               Read More
             </button>
           </div>
           {/* Main modal */}
-          <RoomModel index={index} room={room} trrooms={trdata.translations.en.Chamber} />
+          
         </div>
       </div>
     </div>

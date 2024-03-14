@@ -9,6 +9,17 @@ const Rooms = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [data, setData] = useState<any>(null);
   const [trdata, setTrData] = useState<any>(null);
+  const [selectedRoom, setSelectedRoom] = useState(null);
+
+  const handleReadMore = (roomId) => {
+    const room = data.chamber.find((room) => room.id === roomId);
+    setSelectedRoom(room);
+    
+  };
+
+  const handleCloseModal = () => {
+    setSelectedRoom(null);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -62,9 +73,12 @@ const Rooms = () => {
 
     ) : (
       <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {data && data.chamber.map((room, index) => (
-        <RoomCard index={index} room={room} trdata={trdata} />
+      {data && data.chamber.map((room) => (
+        <div key={room.id}>
+        <RoomCard room={room} trdata={trdata} onReadMore={handleReadMore}/>
+        </div>
       ))}
+      {selectedRoom && <RoomModel room={selectedRoom} onClose={handleCloseModal} trrooms={trdata.translations.en.Chamber} />}
     </div>
         )}
       </div>
